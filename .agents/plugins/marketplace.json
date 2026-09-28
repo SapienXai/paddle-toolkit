@@ -1,0 +1,20 @@
+{
+  "name": "paddle-toolkit-local",
+  "interface": {
+    "displayName": "Paddle Toolkit (local)"
+  },
+  "plugins": [
+    {
+      "name": "paddle-toolkit",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

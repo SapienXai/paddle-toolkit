@@ -1,0 +1,8 @@
+interface:
+  display_name: "Paddle Integration Plan"
+  short_description: "Plan a Paddle Billing integration"
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true

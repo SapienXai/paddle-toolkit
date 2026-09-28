@@ -1,0 +1,8 @@
+interface:
+  display_name: "Paddle Catalog and Pricing"
+  short_description: "Model products, prices, and localization"
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true

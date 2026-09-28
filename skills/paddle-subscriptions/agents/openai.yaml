@@ -1,0 +1,8 @@
+interface:
+  display_name: "Paddle Subscriptions"
+  short_description: "Sync subscriptions and enforce access"
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true

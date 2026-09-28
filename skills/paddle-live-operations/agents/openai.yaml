@@ -1,0 +1,15 @@
+interface:
+  display_name: "Paddle Live Operations"
+  short_description: "Manage Paddle live account actions safely"
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "paddle-live"
+      description: "Paddle live account access through Paddle OAuth"
+      transport: "streamable_http"
+      url: "https://mcp.paddle.com/mcp"

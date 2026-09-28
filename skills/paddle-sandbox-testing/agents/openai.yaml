@@ -1,0 +1,8 @@
+interface:
+  display_name: "Paddle Sandbox Tests"
+  short_description: "Test Paddle Billing in sandbox"
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true

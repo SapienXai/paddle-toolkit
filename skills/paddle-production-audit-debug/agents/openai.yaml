@@ -1,0 +1,8 @@
+interface:
+  display_name: "Paddle Billing Audit and Debug"
+  short_description: "Diagnose integrations and assess launch readiness"
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true

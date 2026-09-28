@@ -1,0 +1,7 @@
+Paddle Toolkit is an independent project published by SapienX. It is not affiliated with or endorsed by Paddle.com Market Limited.
+
+Paddle Toolkit's original materials are Copyright 2026 SapienX and distributed under Apache License 2.0.
+
+The workflow design was informed by PaddleHQ/paddle-agent-skills, Copyright 2026 Paddle.com Market Limited, licensed under Apache License 2.0. The upstream license text is preserved at licenses/PaddleHQ-paddle-agent-skills-LICENSE. Paddle Toolkit's skill files were authored for this project; this repository does not mirror PaddleHQ/paddle-agent-skills.
+
+"Paddle" and Paddle product names are used only to identify the third-party integration and remain the property of their respective owner.

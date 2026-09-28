@@ -1,0 +1,8 @@
+interface:
+  display_name: "Paddle Checkout"
+  short_description: "Implement secure Paddle Billing checkout"
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true
