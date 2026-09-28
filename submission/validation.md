@@ -13,4 +13,4 @@ This file records checks required for a public skills-only submission. Replace p
 - [ ] Run the additional missing-MCP, sandbox/live, destructive-action, and secret-handling cases in `boundary-tests.md`.
 - [ ] Record portal validation, publisher identity, submission ID, and review status in `portal-status.md`.
 
-Local Codex note: The install succeeded and the P1 plan case loaded the relevant skill instructions. Codex CLI 0.158.0-alpha.2.1 logged that its `policy.products` parser expects `CHATGPT` where OpenAI's current plugin submission errors require `CHAT`. N2 did not load Paddle skill instructions. No Paddle account tool was connected, so no account-side case was run.
+Local Codex note: The install succeeded with `ON_USE` authentication and the P1 plan case loaded the relevant skill instructions. Codex CLI 0.158.0-alpha.2.1 logged that its `policy.products` parser expects `CHATGPT` where OpenAI's current plugin submission errors require `CHAT`. N2 did not load Paddle skill instructions. No Paddle account tool was connected, so no account-side case was run.

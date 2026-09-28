@@ -6,6 +6,8 @@
 
 **Live:** `paddle-live-operations` declares the Paddle endpoint directly. Paddle performs browser OAuth; user permissions remain governed by Paddle. The skill activates only for explicit live/production intent and applies extra confirmation to destructive or hard-to-reverse changes.
 
+**Local install:** The repository marketplace uses `policy.authentication: ON_USE`, so a local install does not request Paddle authorization up front. The OAuth connection is deferred until the client first needs the live MCP.
+
 **Sandbox:** Paddle's official sandbox endpoint currently requires a Bearer API key and does not support OAuth. The skill bundle does not embed or declare that key. Users connect their own official sandbox MCP through their client and a protected local secret mechanism. If it is absent, account mutations stop with setup guidance; code-only work continues.
 
 **Documentation:** The Paddle docs MCP endpoint is hosted by Kapa.ai and requires Google or GitHub sign-in. It is optional and used only when already connected. Skills link to current Paddle documentation and must not invent API behavior when no current source is available.
