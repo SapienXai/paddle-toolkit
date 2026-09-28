@@ -4,7 +4,7 @@ Use this checklist while working in the user's actual repository. Choose names, 
 
 ## Establish scope
 
-1. Confirm the integration targets Paddle Billing. Paddle Classic needs a migration or explicitly Classic-specific plan; do not apply Billing examples to it.
+1. Confirm the integration targets Paddle Billing. If the prompt or repository points to Paddle Classic and the user has not explicitly requested a Billing migration, pause and ask whether to keep Classic-specific work, which this plugin does not cover, or migrate to Billing. Do not reuse Billing catalog IDs, endpoints, SDK calls, or webhook fields for Classic.
 2. Inspect the app framework, authentication, persistence, background jobs, billing UI, and existing payment integration before proposing changes.
 3. Separate decisions the user must make (plans, access rules, cancellation policy, tax/proration expectations) from implementation details that can be inferred from the code.
 4. Use sandbox for development and tests. Treat production as a separate environment with separate credentials, identifiers, notification destinations, and approvals.

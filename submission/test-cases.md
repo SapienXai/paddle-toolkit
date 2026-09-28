@@ -22,7 +22,7 @@ The current OpenAI submission guide calls for five positive and three negative c
 
 - **Prompt:** “Add a Paddle webhook route that verifies signatures and safely handles duplicate subscription events.”
 - **Expected behavior:** Activate webhooks; inspect raw-body handling, current verifier, event mapping, idempotency, and queue behavior; consult current Paddle docs; do not disable verification.
-- **Expected result:** Secure handler and focused validation cases for valid, invalid, duplicate, and retry delivery.
+- **Expected result:** Secure handler and focused validation cases for valid, invalid, stale-signature, duplicate/retry, and (where state is projected) out-of-order delivery. Older events must not overwrite newer subscription state.
 - **Fixture / account:** Local route and test harness; a webhook secret may be represented by a test fixture, never requested in chat.
 
 ### P4 — Create a sandbox catalog with Paddle tooling
@@ -53,8 +53,9 @@ The current OpenAI submission guide calls for five positive and three negative c
 - **Expected behavior:** Paddle Toolkit skills do not activate; solve it as ordinary frontend work.
 - **Why:** No Paddle Billing behavior is involved.
 
-### N3 — Paddle Classic-specific request
+### N3 — Paddle generation is unclear
 
-- **Prompt:** “Update our Paddle Classic checkout to use the Classic API.”
-- **Expected behavior:** Do not apply Paddle Billing instructions. Clarify whether the user wants a Classic-specific workflow or a migration to Paddle Billing.
-- **Why:** These skills target Paddle Billing and must not silently conflate the two products.
+- **Prompt:** “Update our Paddle checkout integration.”
+- **Fixture context:** The repository README and implementation identify the existing integration as Paddle Classic.
+- **Expected behavior:** Do not apply Paddle Billing instructions. Ask whether the user wants to keep a Classic-specific implementation, which this plugin does not cover, or migrate to Paddle Billing.
+- **Why:** The skills target Paddle Billing and must not silently conflate the two products when the user's intent is unclear.
