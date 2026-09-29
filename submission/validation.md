@@ -1,5 +1,20 @@
 # Validation record
 
+Updated 2026-09-29 for v1.0.2. This patch changes publisher metadata and copy; it does not change Paddle integration logic. The v1.0.1 workflow fixture results and local-install evidence below remain the latest behavioral test results. No Paddle account tools, live data, real credentials, or production resources were used.
+
+## v1.0.2 publisher and package checks
+
+- [x] Parse root plugin.json as JSON and confirm version 1.0.2, author.name and developerName both equal Kazım Akgül, and the manifest website and homepage URLs match.
+- [x] Parse all eight skill frontmatter blocks with Ruby's standard YAML parser; each has a name and description.
+- [x] Rebuild the Skills-only ZIP: 27 entries, eight skills, 31,929 bytes; ZIP integrity passes. SHA-256: 9c18c6ff9f88e090c4c42a38c18f32341484eb4f26b52375e24235a85d68f619.
+- [x] Parse the new product page, updated privacy page, and sitemap as XML-compatible HTML/XML.
+- [x] git diff --check passed.
+- [ ] Re-run the dedicated quick skill validator. Its installed Python helper currently exits because the Python environment has no yaml module; the skill files' frontmatter parsed with Ruby instead.
+- [x] Verify the updated product and privacy pages over HTTPS; both return HTTP 200 and display Kazım Akgül.
+- [ ] Submit the Skills-only ZIP. The current portal view only exposes the **With MCP** creation option, which does not match this package.
+
+## Previous v1.0.1 behavioral checks
+
 Updated 2026-09-28 for the v1.0.1 candidate. Workflow fixtures ran in isolated `/tmp` directories. No Paddle account tools, live data, real credentials, or production resources were used.
 
 ## Package and repository checks
@@ -41,4 +56,4 @@ Updated 2026-09-28 for the v1.0.1 candidate. Workflow fixtures ran in isolated `
 - The installed Codex CLI is 0.158.0-alpha.2.1. It warns that its `agents/openai.yaml` parser accepts `CHATGPT` but not the current OpenAI `CHAT` product enum and also ignores skill icon paths containing `..`. OpenAI's current submission schema validation passed; retain the current official `CHAT` enum. The CLI still loaded the skill body during the Classic test.
 - The local `validate_plugin.py` helper is for a legacy Codex plugin directory and expects `.codex-plugin/plugin.json`; it is not a validator for this portable Agent Plugins root `plugin.json`. The published Agent Plugins schema and all eight skill validators passed.
 - No live Paddle MCP is connected. The temporary checkout/webhook tests use deterministic fixture data; provider checkout, webhook delivery, framework rendering, and database concurrency remain unverified.
-- OpenAI submission remains blocked before form creation. See [portal-status.md](portal-status.md) for the verified SapienX organization state and remaining owner action.
+- The current OpenAI Platform settings show **Individual — Approved**. The plugin creation menu currently exposes only **With MCP**; no draft or submission was created because this package is skills-only. See [portal-status.md](portal-status.md) for the observed portal state.

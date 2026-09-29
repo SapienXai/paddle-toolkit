@@ -1,6 +1,6 @@
 # Standards and upstream research
 
-Research checked on 2026-09-28 against current primary documentation.
+Research checked on 2026-09-29 against current primary documentation.
 
 ## OpenAI
 
@@ -9,7 +9,7 @@ Research checked on 2026-09-28 against current primary documentation.
 - The skill dependency carries workflow tool availability; it is not a proxy or bundled MCP implementation. OpenAI's MCP authentication guidance calls for OAuth 2.1 for authenticated user data/actions and requires the server to enforce its own authorization.
 - Current submission documentation requires a verified developer/business identity, five positive and three negative test cases, and review attestations. Submission starts review; public publication occurs only after approval and a separate publish action.
 - Current submission error guidance makes listing URLs optional for skills-only ZIP submissions; remote MCP submissions have stronger URL, scan, domain-verification, and review requirements.
-- OpenAI's app guidelines separately require a clear, published privacy policy. SapienX now publishes a Paddle Toolkit-specific policy on its existing site; the manifest links to it. A separate terms page is not required for this skills-only package.
+- OpenAI's app guidelines separately require a clear, published privacy policy. The Paddle Toolkit-specific policy is hosted on sapienx.app and identifies Kazım Akgül as the individual publisher; the manifest links to it. A separate terms page is not required for this skills-only package.
 - OpenAI's submission metadata requires the `CHAT` and `CODEX` product identifiers for broad coverage. The installed local Codex CLI 0.158.0-alpha.2.1 instead reports that it expects `CHATGPT` and `CODEX`; this local parser warning does not match the current upload guide, so the package follows the directory submission contract and records the local compatibility gap.
 
 ## Paddle
@@ -21,7 +21,7 @@ Research checked on 2026-09-28 against current primary documentation.
 
 ## Implementation decision
 
-Submit the final skills ZIP as **Skills only**. Declare only Paddle's OAuth-capable live MCP dependency in the narrowly scoped live-operations skill. Keep sandbox MCP configuration user-owned because it requires a secret Bearer key and is not OAuth-capable. Do not submit Paddle's existing MCP server as though it were operated by SapienX.
+Submit the final skills ZIP as **Skills only**. Declare only Paddle's OAuth-capable live MCP dependency in the narrowly scoped live-operations skill. Keep sandbox MCP configuration user-owned because it requires a secret Bearer key and is not OAuth-capable. Do not submit Paddle's existing MCP server as though it were operated by Kazım Akgül.
 
 ## Primary references
 

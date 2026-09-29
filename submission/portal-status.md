@@ -1,10 +1,11 @@
 # OpenAI submission status
 
-- **Checked:** 2026-09-28, in the signed-in Platform account and the `SapienX` organization.
-- **Organization verification panel:** The organization badge says `Verified`; its detail shows **Individual — Approved** and **Business — Start**.
-- **Publisher match:** The intended publisher is SapienX, so individual approval for a solo developer does not satisfy the business-publisher verification requirement.
-- **Portal behavior:** Plugin creation still blocks with “You need a verified developer identity before you can create or upload a plugin.” `Continue` returns to the verification panel. Refreshing and retrying did not change this.
-- **Submission type and draft:** The submission form was not reached. Skills-only selection could not be confirmed in the portal. No draft, submission ID, or review URL exists.
-- **Package prepared:** `submission/paddle-toolkit-v1.0.1.zip`, 27 entries, eight skills, 31,845 bytes; SHA-256 `12556581cc1065f67cdf228435f27a5395dceb8d36fe092c006fd971e82214ca`.
-- **Required owner action:** In Platform organization settings → General → Verifications, complete **Business → Start** for SapienX. Once the business status is approved, plugin creation can be retried and the actual available submission type checked. Do not submit as the solo developer because the public publisher is SapienX.
+- **Checked:** 2026-09-29, in the signed-in OpenAI Platform account and the SapienX organization.
+- **Organization verification panel:** The organization badge says Verified; the panel shows **Individual — Approved** and **Business — Start**. This confirms individual verification is approved for the selected organization. The settings panel does not display the verified individual's name.
+- **Plugin portal:** The Plugins page loads. Both visible **Create plugin** controls open a menu containing only **With MCP**. The portal does not currently expose the documented **Skills only** choice in this view.
+- **Architecture decision:** Do not select **With MCP** for this package. Paddle Toolkit is a skills-only ZIP and does not operate or submit a Paddle MCP server.
+- **Submission type and draft:** No draft was created because the only visible option does not match the package architecture. No submission ID or review URL exists.
+- **Package prepared:** submission/paddle-toolkit-v1.0.2.zip, 27 entries, eight skills, 31,929 bytes; SHA-256 9c18c6ff9f88e090c4c42a38c18f32341484eb4f26b52375e24235a85d68f619.
+- **Public identity pages:** The product and privacy pages are live at sapienx.app and identify Kazım Akgül. The public GitHub repository description also names Kazım Akgül as publisher.
+- **Identity selection:** The package metadata and public copy use **Kazım Akgül**, as requested. The submission form has not offered a Developer Identity selector, so the exact selected identity/name match has not yet been confirmed there.
 - **Attestations:** No policy or legal attestation has been accepted, and nothing has been submitted for review.

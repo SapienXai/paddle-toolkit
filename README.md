@@ -1,8 +1,8 @@
 # Paddle Toolkit
 
-**Paddle billing workflows from SapienX.** Build, test, debug, and operate Paddle Billing integrations with focused skills for ChatGPT and Codex.
+**Paddle billing workflows by Kazım Akgül.** Build, test, debug, and operate Paddle Billing integrations with focused skills for ChatGPT and Codex.
 
-Paddle Toolkit packages developer guidance and workflow orchestration. It does not provide a billing backend, proxy Paddle API, or store Paddle credentials. It is independently published by **SapienX** and is not affiliated with or endorsed by Paddle.
+Paddle Toolkit packages developer guidance and workflow orchestration. It does not provide a billing backend, proxy Paddle API, or store Paddle credentials. It is independently published by **Kazım Akgül** and is not affiliated with or endorsed by Paddle.
 
 ## What it helps with
 
@@ -55,7 +55,7 @@ The skills work on repository and code tasks without Paddle account access. They
 
 ## Paddle MCP and account access
 
-Account tools connect directly to Paddle. SapienX does not receive Paddle credentials or relay account requests.
+Account tools connect directly to Paddle. Kazım Akgül does not receive Paddle credentials or relay account requests.
 
 - **Live:** the `paddle-live-operations` skill declares a supported MCP dependency on Paddle's `https://mcp.paddle.com/mcp` endpoint. On first use, the client can offer Paddle's OAuth flow. Access is governed by the connected Paddle user's permissions. The skill never silently switches a sandbox request to live.
 - **Sandbox:** Paddle's `https://sandbox-mcp.paddle.com/mcp` endpoint currently authenticates with a sandbox API key and does not support OAuth. Use an existing official sandbox connection or configure it through the MCP client's secure credential mechanism, following [Paddle's MCP setup guide](https://developer.paddle.com/sdks/ai/paddle-mcp/). The skill does not request the key in chat or package it in this repository.
@@ -84,10 +84,10 @@ If the required server is not connected, the skill explains the direct official 
 
 ## Publisher, support, and licensing
 
-Publisher: **SapienX** · Website: [sapienx.app](https://sapienx.app/) · Support: [GitHub Issues](https://github.com/SapienXai/paddle-toolkit/issues)
+Publisher: **Kazım Akgül** · Website: [Paddle Toolkit](https://sapienx.app/paddle-toolkit/) · Support: [GitHub Issues](https://github.com/SapienXai/paddle-toolkit/issues)
 
-Privacy: [Paddle Toolkit Privacy Policy](https://sapienx.app/paddle-toolkit/privacy-policy/). The plugin package contains skills and no SapienX backend; ChatGPT/Codex and any directly connected Paddle or optional documentation MCP process requests under their own privacy terms.
+Privacy: [Paddle Toolkit Privacy Policy](https://sapienx.app/paddle-toolkit/privacy-policy/). The plugin package contains skills and no publisher-operated backend; ChatGPT/Codex and any directly connected Paddle or optional documentation MCP process requests under their own privacy terms.
 
 Paddle Toolkit is licensed under Apache-2.0. The upstream `PaddleHQ/paddle-agent-skills` project is also Apache-2.0; its license and attribution are preserved in [licenses/](licenses/) and [NOTICE](NOTICE). Paddle's product names are used only to identify the integration target.
 
-This is a skills-only package. Its published listing supplies the existing SapienX website and repository issue tracker, plus a Paddle Toolkit-specific privacy policy. Terms of service are omitted because this plugin does not operate a separate service or backend.
+This is a skills-only package. Its published listing supplies a Paddle Toolkit website, the repository issue tracker, and a Paddle Toolkit-specific privacy policy. Terms of service are omitted because the plugin does not operate a separate service or backend.

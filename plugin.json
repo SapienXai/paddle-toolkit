@@ -1,13 +1,13 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "paddle-toolkit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reusable workflows for building, testing, debugging, and operating Paddle Billing integrations.",
   "author": {
-    "name": "SapienX",
-    "url": "https://sapienx.app/"
+    "name": "Kazım Akgül",
+    "url": "https://sapienx.app/paddle-toolkit/"
   },
-  "homepage": "https://sapienx.app/",
+  "homepage": "https://sapienx.app/paddle-toolkit/",
   "repository": "https://github.com/SapienXai/paddle-toolkit",
   "license": "Apache-2.0",
   "keywords": [
@@ -23,8 +23,8 @@
       "interface": {
         "displayName": "Paddle Toolkit",
         "shortDescription": "Paddle billing workflows",
-        "longDescription": "Build, test, debug, and operate Paddle Billing integrations with reusable workflows for ChatGPT and Codex. Paddle Toolkit by SapienX guides repository-only implementation directly and connects to Paddle's live MCP through Paddle OAuth when a live account action is requested. Sandbox and live stay separate; credentials go directly to Paddle or the user's MCP client. Paddle Toolkit is independent and is not affiliated with or endorsed by Paddle.",
-        "developerName": "SapienX",
+        "longDescription": "Build, test, debug, and operate Paddle Billing integrations with reusable workflows for ChatGPT and Codex. Published independently by Kazım Akgül, Paddle Toolkit guides repository-only implementation directly and connects to Paddle's live MCP through Paddle OAuth when a live account action is requested. Sandbox and live stay separate; credentials go directly to Paddle or the user's MCP client. Paddle Toolkit is not affiliated with or endorsed by Paddle.",
+        "developerName": "Kazım Akgül",
         "category": "Developer Tools",
         "capabilities": [
           "Plan Paddle Billing architecture for an existing application",
@@ -35,7 +35,7 @@
           "Debug integrations and audit production readiness",
           "Connect to Paddle live through Paddle's official MCP and OAuth"
         ],
-        "websiteURL": "https://sapienx.app/",
+        "websiteURL": "https://sapienx.app/paddle-toolkit/",
         "supportURL": "https://github.com/SapienXai/paddle-toolkit/issues",
         "privacyPolicyURL": "https://sapienx.app/paddle-toolkit/privacy-policy/",
         "defaultPrompt": [

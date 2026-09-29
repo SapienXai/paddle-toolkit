@@ -5,7 +5,7 @@ description: Read or act on a user's Paddle live account when the request explic
 
 # Use Paddle live account tools
 
-This skill is only for explicit live account requests. The MCP server is Paddle's service at `https://mcp.paddle.com/mcp`; Paddle Toolkit and SapienX do not proxy the request or receive account credentials.
+This skill is only for explicit live account requests. The MCP server is Paddle's service at `https://mcp.paddle.com/mcp`; Paddle Toolkit and Kazım Akgül do not proxy the request or receive account credentials.
 
 1. Check whether the prompt or repository identifies Paddle Classic. If Classic appears and a Billing migration is not explicit, pause and ask whether to keep Classic-specific work, which this plugin does not cover, or migrate to Paddle Billing.
 2. Confirm the request clearly refers to Paddle live/production or real customer data. If the environment is unclear, ask before accessing account tools. Never infer live intent from urgency or from an absent sandbox connection.

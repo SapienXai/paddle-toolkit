@@ -3,14 +3,14 @@
 ## Listing
 
 - **Name:** Paddle Toolkit
-- **Publisher / developer identity:** SapienX
+- **Publisher / developer identity:** Kazım Akgül (individual publisher)
 - **Short description:** Paddle billing workflows
-- **Long description:** Build, test, debug, and operate Paddle Billing integrations with reusable workflows for ChatGPT and Codex. Paddle Toolkit by SapienX guides repository-only implementation directly and connects to Paddle's live MCP through Paddle OAuth when a live account action is requested. Sandbox and live stay separate; credentials go directly to Paddle or the user's MCP client. Paddle Toolkit is independent and is not affiliated with or endorsed by Paddle.
+- **Long description:** Build, test, debug, and operate Paddle Billing integrations with reusable workflows for ChatGPT and Codex. Published independently by Kazım Akgül, Paddle Toolkit guides repository-only implementation directly and connects to Paddle's live MCP through Paddle OAuth when a live account action is requested. Sandbox and live stay separate; credentials go directly to Paddle or the user's MCP client. Paddle Toolkit is not affiliated with or endorsed by Paddle.
 - **Category:** Developer Tools
-- **Website:** https://sapienx.app/
+- **Website:** https://sapienx.app/paddle-toolkit/
 - **Support:** https://github.com/SapienXai/paddle-toolkit/issues
 - **Privacy policy:** https://sapienx.app/paddle-toolkit/privacy-policy/
-- **Terms:** Omitted. The skills-only plugin has no SapienX-operated billing service or backend.
+- **Terms:** Omitted. The skills-only plugin has no publisher-operated billing service or backend.
 - **Logo:** `assets/logo.svg`
 - **Composer icon:** `assets/composer-icon.svg`
 - **Brand colors:** `#13776C` / `#49D6BB`
@@ -33,8 +33,8 @@
 
 ## Availability
 
-Choose countries only in which the verified SapienX publisher identity, support path, and legal terms are available in the portal. Use the broadest truthful set offered by the portal after checking its actual options; do not attest to coverage that has not been verified.
+Choose countries only in which the verified individual publisher identity and its support and policy details are available. Use the broadest truthful set offered by the portal after checking its actual options; do not attest to coverage that has not been verified.
 
 ## Release notes
 
-Initial v1.0.0 submission: eight focused Paddle Billing skills for onboarding, catalog/pricing, checkout, webhooks, subscriptions/entitlements/customer portal, sandbox testing, integration debugging/production audit, and direct Paddle live OAuth operations. The package is skills-only and adds no SapienX billing service or credential proxy.
+v1.0.2 updates the verified publisher identity and publisher-facing copy to Kazım Akgül, updates the product and privacy pages to identify the individual publisher, and preserves the skills-only architecture and direct Paddle OAuth boundary.

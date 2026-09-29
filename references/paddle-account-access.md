@@ -10,7 +10,7 @@ Paddle Toolkit contains skills, not an account proxy. Connect account tools dire
 | Sandbox account operations | `https://sandbox-mcp.paddle.com/mcp` | Sandbox API key as a Bearer token; this server does not support OAuth | Use for test resources and integration development |
 | Documentation lookup | `https://paddlehq.mcp.kapa.ai` | Google or GitHub sign-in with Kapa.ai for rate limiting | Optional source lookup; not an account connection |
 
-The live MCP dependency in `skills/paddle-live-operations/agents/openai.yaml` uses Paddle's OAuth-capable live endpoint. The OAuth flow authenticates directly with Paddle; SapienX does not receive the token. Paddle's current OAuth connection starts with the permissions of the connected Paddle user. The user can review or change MCP permissions in Paddle's dashboard.
+The live MCP dependency in `skills/paddle-live-operations/agents/openai.yaml` uses Paddle's OAuth-capable live endpoint. The OAuth flow authenticates directly with Paddle; Kazım Akgül does not receive the token. Paddle's current OAuth connection starts with the permissions of the connected Paddle user. The user can review or change MCP permissions in Paddle's dashboard.
 
 ## Sandbox setup boundary
 
